@@ -1,0 +1,29 @@
+/* Hayumi のアプリと同じ色（CLAUDE.md の色の表）。外観は端末の設定に合わせる */
+:root {
+  --bg: #FAF8F5; --surface: #FFFFFF; --text: #3A3633; --sub: #6E6862;
+  --line: #E4DED7; --accent: #5F579A;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #1F1D1C; --surface: #2C2927; --text: #F2EEEA; --sub: #B8B0A8;
+    --line: #3A3633; --accent: #B7B0DE;
+  }
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0; background: var(--bg); color: var(--text);
+  font-family: ui-rounded, "SF Pro Rounded", "Hiragino Maru Gothic ProN", "Hiragino Sans", system-ui, sans-serif;
+  line-height: 1.8; -webkit-text-size-adjust: 100%;
+}
+main { max-width: 720px; margin: 0 auto; padding: 32px 16px 64px; }
+h1 { font-size: 1.6rem; margin: 0 0 4px; }
+h2 { font-size: 1.15rem; margin: 32px 0 8px; color: var(--accent); }
+h3 { font-size: 1rem; margin: 20px 0 4px; }
+p, li { font-size: 1rem; }
+.lead { color: var(--sub); margin: 0 0 24px; }
+.card { background: var(--surface); border: 1px solid var(--line); border-radius: 16px; padding: 16px 20px; margin: 12px 0; }
+a { color: var(--accent); }
+nav { display: flex; flex-wrap: wrap; gap: 8px 20px; margin: 0 0 24px; }
+table { width: 100%; border-collapse: collapse; font-size: .95rem; }
+th, td { text-align: left; padding: 8px 6px; border-bottom: 1px solid var(--line); vertical-align: top; }
+footer { color: var(--sub); font-size: .85rem; margin-top: 48px; border-top: 1px solid var(--line); padding-top: 16px; }
